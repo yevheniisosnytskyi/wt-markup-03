@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+body {
+  font-family: 'Roboto', 'Raleway', sans-serif;
+  --main-text: #212121;
+  --side-color: #2196f3;
+  --side-text: #757575;
+  --dark-background: #2f303a;
+  --light-background: #f5f4fa;
+  --svg-gray: #afb1b8;
+  color: var(--main-text);
+  margin: 0 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0 0;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header,
+.title {
+  margin: 0 0;
+}
+.section {
+  padding: 94px 0px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  border: 0.5px solid #ececec;
+}
+.header .nav li:first-of-type {
+  margin-right: 45px;
+}
+.header .nav li:nth-of-type(2) {
+  margin-right: 55px;
+}
+.header .nav li:nth-of-type(3) {
+  margin-right: 309px;
+}
+.header .up-contacts svg {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.header .up-contacts li:first-of-type {
+  margin-right: 30px;
+}
+.site-label {
+  color: black;
+  font-family: 'Raleway';
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+  margin: 0 0;
+  margin-right: 102px;
+}
+.site-label .dev {
+  color: var(--side-color);
+}
+.header .nav {
+  color: var(--main-text);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
+.header .nav a:hover {
+  color: var(--side-color);
+}
+
+.header .up-contacts {
+  color: var(--side-text);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  fill: var(--side-text);
+  margin: 0 0;
+}
+.header .up-contacts a:hover {
+  color: var(--side-color);
+  fill: var(--side-color);
+}
+.order .container {
+  flex-direction: column;
+}
+.order {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: var(--dark-background);
+}
+.order .title {
+  font-weight: 900;
+  line-height: 1.36364;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+  font-size: 44px;
+}
+.order .order-button {
+  margin-top: 35px;
+  width: 200px;
+  height: 50px;
+  border-style: none;
+  border-radius: 4px;
+  background: var(--side-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.96px;
+}
+
+.advantages {
+  display: flex;
+  justify-content: center;
+}
+.advantages li {
+  width: 270px;
+}
+.advantages li:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages p {
+  margin: 0 0;
+}
+.advantages .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.advantages .text {
+  color: var(--side-text);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71429;
+  letter-spacing: 0.42px;
+}
+.works {
+  display: flex;
+  justify-content: center;
+}
+.works .container {
+  flex-wrap: wrap;
+}
+.works .title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+.works ul {
+  margin: 0 0;
+}
+.works img {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+}
+.works li:not(:last-of-type) {
+  margin-right: 30px;
+}
+.team {
+  text-align: center;
+  background: var(--light-background);
+  display: flex;
+  justify-content: center;
+}
+.team .container {
+  flex-wrap: wrap;
+}
+.team .title {
+  margin-bottom: 50px;
+  color: var(--main-text);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+}
+.team ul {
+  margin: 0 0;
+}
+.team .member-name {
+  color: var(--main-text);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+}
+.team .member-job {
+  color: var(--side-text);
+  font-weight: 400;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+}
+.team .member-card {
+  background: white;
+  flex-shrink: 0;
+  display: inline-block;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.team .member-card:not(:last-of-type) {
+  margin-right: 30px;
+}
+.team .icon {
+  fill: var(--svg-gray);
+}
+.team .icon .circle {
+  fill: white;
+}
+.team .icon:hover {
+  fill: white;
+}
+.team .icon:hover .circle {
+  fill: var(--side-color);
+}
+footer {
+  background: var(--dark-background);
+  display: flex;
+  justify-content: center;
+}
+footer .container {
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+.foot-contacts .site-label {
+  color: white;
+}
+footer .title {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.foot-contacts {
+  margin-right: 40px;
+}
+.foot-contacts address {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71429;
+  letter-spacing: 0.42px;
+}
+.foot-contacts ul {
+  margin-top: 20px;
+  flex-direction: column;
+}
+.foot-contacts address li:first-child {
+  color: white;
+}
+.foot-contacts address li:not(:last-of-type) {
+  margin-bottom: 9px;
+}
+.socials {
+  margin-right: 93px;
+}
+.socials .title {
+  margin-bottom: 20px;
+}
+.socials .icon {
+  fill: white;
+}
+.socials .icon .circle {
+  fill: rgba(255, 255, 255, 0.1);
+}
+.socials .icon:hover .circle {
+  fill: var(--side-color);
+}
+.sub .input {
+  width: 358px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  position: absolute;
+}
+.sub .title {
+  margin-bottom: 20px;
+}
+.email {
+  display: flex;
+  align-items: center;
+}
+.email .label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.48px;
+  position: relative;
+  left: 16px;
+}
+.email .sub-button {
+  width: 200px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: var(--side-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  text-align: center;
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.96px;
+  position: relative;
+  left: 334px;
+}
+.email .sub-button .icon {
+  fill: white;
+  position: relative;
+  top: 6px;
+  margin-left: 7px;
+}
